@@ -19,9 +19,6 @@ It is time to take what you have learned about unsupervised learning and the AWS
 
 ## Clustering Crypto
 
-![Cryptocurrencies coins](Images/cryptocurrencies-coins.jpg)
-_[Cryptocurrencies coins by Worldspectrum](https://www.pexels.com/@worldspectrum?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels) | [Free License](https://www.pexels.com/photo-license/)_
-
 ### Background
 
 You are a Senior Manager at the Advisory Services team on a [Big Four firm](https://en.wikipedia.org/wiki/Big_Four_accounting_firms). One of your most important clients, a prominent investment bank, is interested in offering a new cryptocurrencies investment portfolio for its customers, however, they are lost in the immense universe of cryptocurrencies. They ask you to help them make sense of it all by generating a report of what cryptocurrencies are available on the trading market and how they can be grouped using classification.  
@@ -36,9 +33,9 @@ Accomplished the following main tasks:
 
 * **[Clustering Cryptocurrencies Using K-Means](#Clustering-Cryptocurrencies-Using-K-Means):** Predicted clusters using the cryptocurrencies data using the `KMeans` algorithm from `sklearn`.
 
-* **[Visualizing Results](#Visualizing-Results):** Created some plots and data tables to present your results.
+* **[Visualizing Results](#Visualizing-Results):** Created plots and data tables to present results.
 
-* **[Optional Challenge](#Optional-Challenge):** Deployed your notebook to Amazon SageMaker.
+* **[Optional Challenge](#Optional-Challenge):** Deployed notebook to Amazon SageMaker.
 
 ---
 
@@ -90,6 +87,7 @@ After reducing the data dimensions, created a DataFrame named `pcs_df` using as 
 
 Result:
 
+
 #### Clustering Cryptocurrencies Using K-Means
 
 Used the [`KMeans` algorithm from `sklearn`](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html) to cluster the cryptocurrencies using the PCA data.
@@ -104,17 +102,26 @@ Performed the following tasks:
 
 Result:
 
+![Elbow Cure](Images/elbow_curve.png)
+
 #### Visualizing Results
 
 Created some data visualization to present the final results. Perform the following tasks:
 
 1. Created a 3D-Scatter using Plotly Express to plot the clusters using the `clustered_df` DataFrame. included the following parameters on the plot: `hover_name="CoinName"` and `hover_data=["Algorithm"]` to show this additional info on each data point.
 
+![3D Scatter Plot](Images/scatter_plot1.png)
+
 2. Used `hvplot.table` to create a data table with all the current tradable cryptocurrencies. The table should have the following columns: `"CoinName", "Algorithm", "ProofType", "TotalCoinSupply", "TotalCoinsMined", "Class"`
+
+
+![Clustered Table](Images/clustered_table.png)
 
 3. Created a scatter plot using `hvplot.scatter`, to present the clustered data about cryptocurrencies having `x="TotalCoinsMined"` and `y="TotalCoinSupply"` to contrast the number of available coins versus the total number of mined coins. Use the `hover_cols=["CoinName"]` parameter to included the cryptocurrency name on each data point.
 
 Results:
+
+![Clustered Data](Images/scatter_plot2.png)
 
 
 ### Optional Challenge
@@ -137,12 +144,25 @@ Perform the following tasks:
 
 4. Used the `altair` scatter plot to create the Elbow Curve.
 
+Result:
+
+![Challenge_1](Images/challenge_1.png)
+
 5. Used the `altair` scatter plot, instead of the 3D-Scatter from Plotly Express, to visualize the clusters. Since this is a 2D-Scatter, use `x="PC 1"` and `y="PC 2"` for the axes, and add the following columns as tool tips: `"CoinName", "Algorithm", "TotalCoinsMined", "TotalCoinSupply"`.
+
+Result:
+
+![Challenge_2](Images/challenge_2.png)
 
 6. Used the `altair` scatter plot to visualize the tradable cryptocurrencies using  `x="TotalCoinsMined"` and `y="TotalCoinSupply"` for the axes.
 
+Result:
+
+![Challenge_3](Images/challenge_3.png)
+
 7. Show the table of current tradable cryptocurrencies using the `display()` command.
 
-8. Remove all `hvplot` and Plotly Express references from your code.
+Result:
 
+![Challenge_4](Images/challenge_4.png)
 
