@@ -1,4 +1,6 @@
-# Unit 13 Homework Assignment - The Power of the Cloud and Unsupervised Learning
+# Unit 13 Homework Assignment by John Mangahas
+
+## The Power of the Cloud and Unsupervised Learning
 
 ## Background
 
@@ -85,9 +87,6 @@ Used the [`PCA` algorithm from `sklearn`](https://scikit-learn.org/stable/module
 
 After reducing the data dimensions, created a DataFrame named `pcs_df` using as columns names `"PC 1", "PC 2"` and `"PC 3"`;  use the `crypto_df.index` as the index for this new DataFrame.
 
-Result:
-
-
 #### Clustering Cryptocurrencies Using K-Means
 
 Used the [`KMeans` algorithm from `sklearn`](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html) to cluster the cryptocurrencies using the PCA data.
@@ -119,18 +118,18 @@ Created some data visualization to present the final results. Perform the follow
 
 3. Created a scatter plot using `hvplot.scatter`, to present the clustered data about cryptocurrencies having `x="TotalCoinsMined"` and `y="TotalCoinSupply"` to contrast the number of available coins versus the total number of mined coins. Use the `hover_cols=["CoinName"]` parameter to included the cryptocurrency name on each data point.
 
-Results:
+Result:
 
 ![Clustered Data](Images/scatter_plot2.png)
 
 
 ### Optional Challenge
 
-For the challenge section, you have to upload your Jupyter notebook to Amazon SageMaker and deploy it.
+For the challenge section, I uploaded the Jupyter notebook to Amazon SageMaker and deployed it.
 
-The `hvplot` and Plotly Express libraries are not included in the built-in anaconda environments, so for this challenge section, you should use the `altair` library instead.
+The `hvplot` and Plotly Express libraries are not included in the built-in anaconda environments, so for this challenge section, I used the `altair` library instead.
 
-Perform the following tasks:
+Performed the following tasks:
 
 1. Uploaded your Jupyter notebook and rename it as `crypto_clustering_sm.ipynb`
 
