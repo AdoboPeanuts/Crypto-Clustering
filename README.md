@@ -45,7 +45,7 @@ Accomplished the following main tasks:
 
 * [crypto_clustering.ipynb](ClusteringCrypto/crypto_clustering.ipynb)
 
-* [cyprto_clustering_sm.ipynb](ClusteringCrypto/crypto_clustering_sm.ipynb)
+* [crypto_clustering_sm.ipynb](ClusteringCrypto/crypto_clustering_sm.ipynb)
 
 ---
 
