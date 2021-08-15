@@ -23,9 +23,9 @@ It is time to take what I have learned about unsupervised learning and the AWS s
 
 ### Background
 
-You are a Senior Manager at the Advisory Services team on a [Big Four firm](https://en.wikipedia.org/wiki/Big_Four_accounting_firms). One of your most important clients, a prominent investment bank, is interested in offering a new cryptocurrencies investment portfolio for its customers, however, they are lost in the immense universe of cryptocurrencies. They ask you to help them make sense of it all by generating a report of what cryptocurrencies are available on the trading market and how they can be grouped using classification.  
+I am a Senior Manager at the Advisory Services team on a [Big Four firm](https://en.wikipedia.org/wiki/Big_Four_accounting_firms). One of my most important clients, a prominent investment bank, is interested in offering a new cryptocurrencies investment portfolio for its customers, however, they are lost in the immense universe of cryptocurrencies. They ask me to help them make sense of it all by generating a report of what cryptocurrencies are available on the trading market and how they can be grouped using classification.  
 
-In this homework assignment, you will put your new unsupervivsed learning and Amazon SageMaker skills into action by clustering cryptocurrencies and creating plots to present your results.
+In this homework assignment, I will service my new unsupervivsed learning and Amazon SageMaker skills into action by clustering cryptocurrencies and creating plots to present your results.
 
 Accomplished the following main tasks:
 
@@ -135,7 +135,7 @@ The `hvplot` and Plotly Express libraries are not included in the built-in anaco
 
 Performed the following tasks:
 
-1. Uploaded your Jupyter notebook and rename it as `crypto_clustering_sm.ipynb`
+1. Uploaded Jupyter notebook and rename it as `crypto_clustering_sm.ipynb`
 
 2. Selected the `conda_python3` environment.
 
