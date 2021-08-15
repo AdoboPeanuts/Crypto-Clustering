@@ -6,7 +6,7 @@
 
 It is time to take what I have learned about unsupervised learning and the AWS services and apply it to new situations. For this assignment, I will complete the Clustering Crypto challenge. 
 
-### Before You Begin
+### Process and workflow
 
 1. Created a new repository for this project called `unit13-challenge`.
 
@@ -43,7 +43,9 @@ Accomplished the following main tasks:
 
 ### Files
 
-* [crypto_clustering.ipynb](Starter_Files/crypto_clustering.ipynb)
+* [crypto_clustering.ipynb](ClusteringCrypto/crypto_clustering.ipynb)
+
+* [cyprto_clustering_sm.ipynb](ClusteringCrypto/crypto_clustering_sm.ipynb))
 
 ---
 
@@ -95,13 +97,15 @@ Performed the following tasks:
 
 1. Created an Elbow Curve to find the best value for `k` using the `pcs_df` DataFrame.
 
+![Elbow Cure](Images/elbow_curve.png)
+
 2. Defined the best value for `k`, run the `Kmeans` algorithm to predict the `k` clusters for the cryptocurrencies data. Use the `pcs_df` to run the `KMeans` algorithm.
 
 3. Created a new DataFrame named `clustered_df`, that includes the following columns `"Algorithm", "ProofType", "TotalCoinsMined", "TotalCoinSupply", "PC 1", "PC 2", "PC 3", "CoinName", "Class"`. Maintained the index of the `crypto_df` DataFrames as is shown bellow.
 
 Result:
 
-![Elbow Cure](Images/elbow_curve.png)
+![Clustered](Images/new_clustered_df.png)
 
 #### Visualizing Results
 
